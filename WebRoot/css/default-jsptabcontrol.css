@@ -1,0 +1,80 @@
+/* tab styles */
+
+/* Draw line at down tab header */
+ul.tabControlHeader {
+	color: #000;
+	border-bottom: 2px solid black;
+	margin: 12px 0px 0px 0px;
+	padding: 0, 5px;
+	z-index: 1;
+	padding-left: 10px }
+
+/* Set tab (li) horizontally */
+ul.tabControlHeader li {
+    display: inline;
+	overflow: hidden;
+	list-style-type: none; 
+	color: #DEDECF;
+	background: #898B5E;
+	font: bold 1em "Trebuchet MS", Arial, sans-serif;
+	border: 2px solid black;
+	padding: 2px 5px 0px 5px;
+	margin: 2px 2px 0 2px;
+	text-decoration: none;
+}
+
+
+/* Tab active */
+ul.tabControlHeader li.active {
+    background: #ABAD85;
+	border-bottom: 3px solid #ABAD85; }
+
+/* A with no text-decoration */
+ul.tabControlHeader a {
+    color: #666;
+    text-decoration: none;
+}
+
+.tabControlBody {font: 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
+	text-align: justify;
+	background: #ABAD85;
+	padding: 0px;
+	border: 2px solid black;
+	border-top: none;
+	z-index: 2;	}
+	
+/* READ-ONLY State */
+ul.tabControlHeader li.tabPageHeaderReadOnly {
+   	background: #d4d7a5;
+   	border: 2px solid black;   	
+}
+
+ul.tabControlHeader li.tabPageHeaderReadOnly_active {
+	background: #d4d7a5;
+	border-bottom: 3px solid #d4d7a5; 	
+}
+
+div.tabPageBodyReadOnly {
+	background: #e9ecb4;
+   	opacity:70;
+   	filter: alpha(opacity=70);
+   	-moz-opacity: 0.7;	
+}
+
+/* FORBIDDEN State */
+ul.tabControlHeader li.tabPageHeaderForbidden {
+	background: #ba2f2f;
+}
+
+ul.tabControlHeader li.tabPageHeaderForbidden_active {
+	background: #ba2f2f;
+}
+
+div.tabPageBodyForbidden {
+	background: #ba2f2f;
+}
+
+ul.tabControlHeader li.tabPageHeaderForbidden a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
